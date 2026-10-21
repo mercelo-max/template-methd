@@ -1,0 +1,21 @@
+@startuml
+title Template Method - estructura generica
+abstract class AbstractClass {
+  +templateMethod(): void
+  #primitiveOperation(): void
+  #hook(): void
+}
+class ConcreteClassA {
+  #primitiveOperation(): void
+  #hook(): void
+}
+class ConcreteClassB {
+  #primitiveOperation(): void
+}
+AbstractClass <|-- ConcreteClassA
+AbstractClass <|-- ConcreteClassB
+note right of AbstractClass::templateMethod
+  Define el orden de los pasos.
+  Las subclases no cambian el esqueleto.
+end note
+@enduml

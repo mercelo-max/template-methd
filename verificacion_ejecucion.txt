@@ -1,0 +1,16 @@
+[
+  {
+    "version": "sin_patron",
+    "compile_exit": 0,
+    "compile_error": "",
+    "run_exit": 0,
+    "output": "=== SIN PATRON: CAFE ===\nHirviendo agua\nFiltrando cafe\nSirviendo en una taza\nAgregando azucar\n\n=== SIN PATRON: TE ===\nHirviendo agua\nColocando saquito de te\nSirviendo en una taza\nAgregando limon"
+  },
+  {
+    "version": "con_patron",
+    "compile_exit": 0,
+    "compile_error": "",
+    "run_exit": 0,
+    "output": "=== CON TEMPLATE METHOD: CAFE ===\nHirviendo agua\nFiltrando cafe\nSirviendo en una taza\nAgregando azucar\n\n=== CON TEMPLATE METHOD: TE ===\nHirviendo agua\nColocando saquito de te\nSirviendo en una taza\nAgregando limon"
+  }
+]

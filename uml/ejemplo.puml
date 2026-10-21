@@ -1,0 +1,20 @@
+@startuml
+title Preparacion de bebidas - Template Method
+abstract class PreparadorBebida {
+  +preparar(): void {final}
+  -hervirAgua(): void
+  #prepararBebida(): void {abstract}
+  -servirEnTaza(): void
+  #agregarExtra(): void
+}
+class PreparadorCafe {
+  #prepararBebida(): void
+  #agregarExtra(): void
+}
+class PreparadorTe {
+  #prepararBebida(): void
+  #agregarExtra(): void
+}
+PreparadorBebida <|-- PreparadorCafe
+PreparadorBebida <|-- PreparadorTe
+@enduml
